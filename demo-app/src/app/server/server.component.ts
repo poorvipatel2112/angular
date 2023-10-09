@@ -12,7 +12,8 @@ export class ServerComponent {
   serverName = '';
   //assignement 2
   username = '';
-  output=''
+  output='';
+  updateUser = false;
   
 
   getServerStatus(){
@@ -37,11 +38,12 @@ export class ServerComponent {
 
   //assignment 2
   updateUsername(){
-    this.output = 'user saved with username ' + this.username;
+    this.updateUser = true;
+
     setTimeout(()=>{
       this.username= '';
       this.output = '';
-    },1000);
+    },2000);
   }
 
 }

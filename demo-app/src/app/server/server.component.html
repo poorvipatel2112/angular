@@ -23,9 +23,16 @@
         Upon clicking the button, the username should be reset to an empty string</p>
 
     <input type="text" class="form-control" [(ngModel)] = "username">
-    <p>{{username}}</p>
+    <!-- <p>{{username}}</p> -->
     <button class="btn btn-secondary" [disabled]="username === ''" (click) = "updateUsername()">save user</button>
-    <p>{{output}}</p>
+    <p *ngIf="updateUser; else noUser">user created with username  {{username}}</p>
+    <ng-template #noUser>
+        <p>no user is registered</p>
+    </ng-template>
+
+    <!-- directives *ngIf -->
+
+
 </body>
 </html>
 
