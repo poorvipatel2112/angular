@@ -6,8 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <button class="btn btn-primary" [disabled]="!allowNewServer">Add server</button>
+    <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="createNewServer()">Add server</button>
+    <p>{{addServerStatus}}</p>
     <p>{{'server'}}  with server id {{serverId}} is {{getServerStatus()}}</p>
+    
 </body>
 </html>
 
