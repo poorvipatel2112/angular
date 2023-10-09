@@ -6,10 +6,26 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- {{}} is used for string interpolation 
+    [] is used for property binding
+    () is used for event binding and 
+    [()] is used for two way data binding -->
+    <input type="text" class="form-control" [(ngModel)] = "serverName">
     <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="createNewServer()">Add server</button>
     <p>{{addServerStatus}}</p>
     <p>{{'server'}}  with server id {{serverId}} is {{getServerStatus()}}</p>
-    
+
+
+    <h3>assignment 2</h3>
+    <p>Add a Input field which updates a property ('username') via Two-Way-Binding
+        Output the username property via String Interpolation (in a paragraph below the input)
+        Add a button which may only be clicked if the username is NOT an empty string
+        Upon clicking the button, the username should be reset to an empty string</p>
+
+    <input type="text" class="form-control" [(ngModel)] = "username">
+    <p>{{username}}</p>
+    <button class="btn btn-secondary" [disabled]="username === ''" (click) = "updateUsername()">save user</button>
+    <p>{{output}}</p>
 </body>
 </html>
 
