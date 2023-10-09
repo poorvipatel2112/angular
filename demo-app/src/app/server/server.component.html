@@ -1,2 +1,13 @@
-<p>server works!</p>
-<p>{{'server'}}  with server id {{serverId}} is {{getServerStatus()}}</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btn btn-primary" [disabled]="!allowNewServer">Add server</button>
+    <p>{{'server'}}  with server id {{serverId}} is {{getServerStatus()}}</p>
+</body>
+</html>
+
