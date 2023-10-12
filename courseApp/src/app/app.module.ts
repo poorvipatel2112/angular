@@ -17,11 +17,11 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     HeaderComponent,
     RecipeComponent,
-    ShoppingEditComponent,
     RecipeListComponent,
     RecipeDetailsComponent,
     RecipeItemComponent,
-    ShoppingListComponent
+    ShoppingListComponent,
+    ShoppingEditComponent
   ],
   imports: [
     BrowserModule,
