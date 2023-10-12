@@ -12,7 +12,6 @@ export class RecipeComponent implements OnInit{
   selectedRecipe : Recipe;
 
   constructor(private recipeService : RecipeService){
-
   }
 
   ngOnInit(): void {
@@ -20,6 +19,5 @@ export class RecipeComponent implements OnInit{
         this.selectedRecipe = recipe;
       })
   }
-
 
 }
