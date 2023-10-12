@@ -12,8 +12,7 @@ export class ShoppingEditComponent implements OnInit{
   @Output() ingredientAdded = new EventEmitter<Ingredient>();
 
   constructor(){
-    // this.nameInputRef = null;
-    // this.amountInputRef = null;
+   
   }
   
   ngOnInit(): void {
