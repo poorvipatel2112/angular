@@ -32,8 +32,8 @@ export class ShoppingEditComponent implements OnInit,OnDestroy{
     });
   }
 
-  ngOnDestroy(): void {
-      this.subscription.unsubscribe();
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 
   onSubmit(form: NgForm){
@@ -54,7 +54,7 @@ export class ShoppingEditComponent implements OnInit,OnDestroy{
   }
 
   onDelete(){
-    this.slService.deleteIngreient(this.editedItemIndex);
+    this.slService.deleteIngredient(this.editedItemIndex);
     this.onClear();
   }
 
