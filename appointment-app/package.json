@@ -1,5 +1,5 @@
 {
-  "name": "service-start",
+  "name": "appointment-app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
