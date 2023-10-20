@@ -1,0 +1,20 @@
+<div class="container">
+
+    <div>
+        <h4>Book Reservation</h4>
+        <label>Title</label>
+        <input type="text" [(ngModel)] = "this.bookTitle">
+        <label>Author</label>
+        <input type="text" [(ngModel)]="this.bookAuthor">
+        <button class="btn btn-primary" (click)="onAddBook()">Add Book</button>
+    </div>
+
+
+    <h2 class="text-center mt-5">Books</h2>
+    <ul>
+        <li *ngFor="let books of books; let i =index">
+            {{books.author}} <br> {{books.title}}
+            <button class="btn btn-daanger" type="button" (click)="onDeleteBook(i)">Delete</button>
+        </li>
+    </ul>
+</div>
